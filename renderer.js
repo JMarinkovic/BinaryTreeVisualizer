@@ -17,6 +17,7 @@ var renderer = /** @class */ (function () {
         this.context.beginPath();
         this.context.arc(x, y, radius, 0, 2 * Math.PI);
         this.context.stroke();
+        this.context.closePath();
     };
     return renderer;
 }());
